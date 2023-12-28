@@ -17,4 +17,10 @@ const currentStrokeEvent = (io, socket) => {
     })
 }
 
-module.exports = { cursorMoveEvent, newStrokeEvent, currentStrokeEvent};
+const changeImageEvent = (io, socket) => {
+    socket.on("image-change", (base64) => {
+        socket.broadcast.emit("image-change", base64);   
+    })
+}
+
+module.exports = { cursorMoveEvent, newStrokeEvent, currentStrokeEvent, changeImageEvent};
