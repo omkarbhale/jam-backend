@@ -1,5 +1,7 @@
 # Jam backend
 
+To know more about this project, check the [associated frontend repository](https://github.com/omkarbhale/jam-frontend)
+
 ## Getting started
 To start the server
 ```bash
